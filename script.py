@@ -4,12 +4,12 @@ import requests
 import sqlite3
 import cv2
 
-IP_Webcam = False
+IP_Webcam = True
 
 if IP_Webcam is True:
-    url = "http://192.168.43.1:8080/videofeed"  # IP Webcam
-else:
     video_capture = cv2.VideoCapture('http://192.168.43.1:8080/videofeed')
+else:
+    video_capture = cv2.VideoCapture(0)
 
 known_face_names = []
 known_face_encodings = []
@@ -37,12 +37,7 @@ face_names = []
 process_this_frame = True
 
 while True:
-    if IP_Webcam is True:
-        img_resp = requests.get(url)    # IP Webcam
-        img_arr = np.array(bytearray(img_resp.content), dtype = np.uint8)
-        frame = cv2.imdecode(img_arr, -1)
-    else:
-        ret, frame = video_capture.read()
+    ret, frame = video_capture.read()
 
     small_frame = cv2.resize(frame, (0, 0), fx = 0.25, fy = 0.25)
 

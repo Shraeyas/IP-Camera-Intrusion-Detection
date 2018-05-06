@@ -9,7 +9,6 @@ Implementation of Intrusion Detection System based on Python and OpenCV.
 * [dlib library](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf)
 
 ## Set Up
-
 * Firstly clone/download the project from [here](https://github.com/vishalpolley/Intrusion-Detection/archive/master.zip)
 
 * Open terminal / cmd and navigate to the project folder.
@@ -20,6 +19,11 @@ Implementation of Intrusion Detection System based on Python and OpenCV.
 ```
 pip install -r requirements.txt
 ```
+## To set up IP camera: 
+* We are using this app to set up the IP Camera over an android Device https://play.google.com/store/apps/details?id=com.pas.webcam
+* In the script.py file, modify the IP address contained in this line
+video_capture = cv2.VideoCapture('http://192.168.43.1:8080/videofeed') to the IP address for your device
+
 
 ## Running the Project
 

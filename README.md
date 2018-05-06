@@ -2,12 +2,6 @@
 
 Implementation of Intrusion Detection System based on Python and OpenCV.
 
-## Requirements
-
-* [Python 3.3+](https://www.python.org/downloads/)
-
-* [dlib library](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf)
-
 ## Set Up
 * Firstly clone/download the project from [here](https://github.com/vishalpolley/Intrusion-Detection/archive/master.zip)
 
@@ -15,7 +9,6 @@ Implementation of Intrusion Detection System based on Python and OpenCV.
 
 * Install all the dependencies required for the project.
 
-  (If you are on Linux/MacOS platform run the command with `sudo` privileges)
 ```
 pip install -r requirements.txt
 ```
@@ -31,7 +24,7 @@ pip install -r requirements.txt
 
 * To train the model with your face images, run
 ```
-python3 capture.py
+python capture.py
 ```
 
 * Now to capture your face press `c` key.
@@ -48,7 +41,7 @@ python3 capture.py
 
 * For detecting any instrusion, run the script
 ```
-python3 script.py
+python script.py
 ```
 
 * The image window will display the person's name, if that face exits in the database, and the system will prompt `Permission Granted !!` message.

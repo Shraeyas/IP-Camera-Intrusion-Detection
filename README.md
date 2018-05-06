@@ -1,6 +1,7 @@
 # Intrusion Detection System
 
 Implementation of Intrusion Detection System based on Python and OpenCV.
+The face recognition modules have been derived from **https://github.com/ageitgey/face_recognition**
 
 ## Set Up
 * Firstly clone/download the project from [here](https://github.com/vishalpolley/Intrusion-Detection/archive/master.zip)
